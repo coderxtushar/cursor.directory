@@ -7,6 +7,7 @@ import { blazorRules } from "./rules/blazor";
 import { bootstrapRules } from "./rules/bootstrap";
 import { cRules } from "./rules/c";
 import { convexRules } from "./rules/convex";
+import { cppRules } from "./rules/cpp";
 import { dataAnalystRules } from "./rules/data-analyst";
 import { deepLearningRules } from "./rules/deep-learning";
 import { djangoRules } from "./rules/django";
@@ -57,6 +58,7 @@ import { luaRules } from "./rules/lua";
 import { androidRules } from "./rules/android";
 import { ghostTailwindcssRules } from "./rules/ghost-tailwindcss";
 import { devopsRules } from "./rules/devops-backend";
+import { chromeExtensionRules } from "./rules/chrome-extension";
 
 export interface Rule {
   title: string;
@@ -82,6 +84,7 @@ export const rules: Rule[] = [
   ...bootstrapRules,
   ...cRules,
   ...convexRules,
+  ...cppRules,
   ...dataAnalystRules,
   ...deepLearningRules,
   ...djangoRules,
@@ -133,6 +136,7 @@ export const rules: Rule[] = [
   ...androidRules,
   ...ghostTailwindcssRules,
   ...devopsRules,
+  ...chromeExtensionRules,
 ].map(
   (rule): Rule => ({
     ...rule,
